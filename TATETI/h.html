@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <scrip src='script.js'></script>
+
+        <style>
+            table, tr, td{
+                border: 10px solid black;
+                border-collapse: collapse;
+                width:30%;
+                }
+        </style>
+
+</head>
+<body>
+
+    <script>
+        
+function verFoto(obj,im) {
+    cad="<img src='"+im+"' />";
+  document.getElementById(obj).innerHTML=cad;
+
+    if ( im == 1 ) {
+        
+    }
+
+}
+    </script>
+
+        <table>
+        <tr>
+        <td>
+        <img src="bvato.png" onclick="verFoto('imagen','blue.jpg')" />
+        </td>
+        <td id="imagen"></td>
+        </tr>
+        </table>
+
+        <hr>
+
+        <table style="margin: 320px;">
+            <tr style="height: 200px;">
+                <td id="1" onclick="verFoto('1','blue.jpg')">HOLA</td>
+                <td id="2" onclick="verFoto('2','blue.jpg')">HOLA</td>
+                <td id="3" onclick="verFoto('3','blue.jpg')">HOLA</td>
+            </tr>
+    
+            <tr style="height: 200px;">
+                <td id="4" onclick="verFoto('4','blue.jpg')">HOLA</td>
+                <td id="5" onclick="verFoto('5','blue.jpg')">HOLA</td>
+                <td id="6" onclick="verFoto('6','blue.jpg')">HOLA</td>
+            </tr>
+    
+            <tr style="height: 200px;">
+                <td id="7" onclick="verFoto('7','blue.jpg')">HOLA</td>
+                <td id="8" onclick="verFoto('8','blue.jpg')">HOLA</td>
+                <td id="9" onclick="verFoto('9','blue.jpg')">HOLA</td>
+            </tr>
+        </table>
+
+</body>
+</html>
